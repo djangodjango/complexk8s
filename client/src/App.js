@@ -10,7 +10,7 @@ function App() {
     <Router>
       <div className="App">
         <header>
-          <h1 className="App-Title"> Welcome to Fibonacci react APP (version 2)</h1>
+          <h1 className="App-Title"> Welcome to Fibonacci react APP (version k8s)</h1>
           <p>
             <Link to="/">Home</Link>
           </p>

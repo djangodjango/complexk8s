@@ -13,6 +13,9 @@ docker push epsyl0n/multi-server:$SHA
 docker push epsyl0n/multi-worker:$SHA
 
 # apply kubernetes config
+kubectl apply -f k8s/database-persistent-volume-claim.yaml
+kubectl apply -f k8s/postgres-deployment.yaml
+kubectl apply -f k8s/postgres-cluster-ip-service.yaml
 kubectl apply -f k8s
 kubectl set image deployments/client-deployment client=epsyl0n/multi-client:$SHA
 kubectl set image deployments/server-deployment server=epsyl0n/multi-server:$SHA
