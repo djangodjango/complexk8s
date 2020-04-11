@@ -35,7 +35,11 @@ class Fib extends Component {
     }
 
     renderSeenIndexes() {
-        return this.state.seenIndexes.map(({ number }) => number).join(', ');
+       if(this.state.seenIndexes.length) {
+            return this.state.seenIndexes.map(({ number }) => number).join(', ');
+        }
+        else
+            return 'Have not seen any index yet!'
     }
 
     renderValues() {
@@ -61,7 +65,7 @@ class Fib extends Component {
                     <button>Submit</button>
                 </form>
 
-                <h3>Indexes I have seen:</h3>
+                <h3>Indexes I have seen baby:</h3>
                 {this.renderSeenIndexes()}
 
                 <h3>Calculated Values:</h3>
