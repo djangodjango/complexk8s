@@ -39,7 +39,7 @@ class Fib extends Component {
             return this.state.seenIndexes.map(({ number }) => number).join(', ');
         }
         else
-            return 'Have not seen any index yet!'
+            return 'Have not seen any index yet!!'
     }
 
     renderValues() {
