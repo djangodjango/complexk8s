@@ -1,0 +1,5 @@
+# Mac OS system files
+.DS_Store
+
+# Service account json key
+service-account.json
