@@ -19,7 +19,7 @@ before_install:
 # Set GC project id, zone and cluster name
   - gcloud config set project iron-airfoil-273916
   - gcloud config set compute/zone europe-west1-b
-  - gcloud container cluster get-credentials multi-cluster
+  - gcloud container clusters get-credentials multi-cluster
 # Login to docker hub
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 # Build multi-client test image
